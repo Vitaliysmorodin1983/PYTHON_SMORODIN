@@ -1,2 +1,4 @@
-myage = "42"
-print("Age: " + myage)
+myage = 42
+print(myage)
+myage += 3
+print(myage)
