@@ -1,6 +1,6 @@
 def square(side):
     return side ** 2
 
-side_length = 4
+side_length = int(input("Введите стороны: "))
 area = square(side_length)
 print(f"Площадь квадрата со стороной {side_length} равна {area}")
