@@ -1,9 +1,20 @@
 def month_to_season(month):
-    seasons = {
-        12: "Зима", 1: "Зима", 2: "Зима",
-        3: "Весна", 4: "Весна", 5: "Весна",
-        6: "Лето", 7: "Лето", 8: "Лето",
-        9: "Осень", 10: "Осень", 11: "Осень"
-    }
-    return seasons.get(month, "Неверный номер месяца")
-print(month_to_season(7))
+    if month in [12, 1, 2]:
+        return "Зима"
+    elif month in [3, 4, 5]:
+        return "Весна"
+    elif month in [6, 7, 8]:
+        return "Лето"
+    elif month in [9, 10, 11]:
+        return "Осень"
+    else:
+        return "Неверный номер месяца"
+
+
+month = int(input("Введите номер месяца (1-12): "))
+
+
+season = month_to_season(month)
+
+
+print(f"Месяц {month} соответствует сезону: {season}")
