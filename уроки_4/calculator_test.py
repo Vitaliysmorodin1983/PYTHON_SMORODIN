@@ -1,4 +1,4 @@
-from calculator import Calculator
+from уроки_4.calculator import Calculator
 
 def test_sum_positive_nums():
     calculator = Calculator()
@@ -8,7 +8,7 @@ def test_sum_positive_nums():
 def test_sum_negative_nums():
     calculator = Calculator()
     res = calculator.sum(-4, -6)
-    assert res == -11
+    assert res == -10
 def test_sum_positive_and_negative_nums(): 
     calculator = Calculator()
     res = calculator.sum(-6, 6) 
