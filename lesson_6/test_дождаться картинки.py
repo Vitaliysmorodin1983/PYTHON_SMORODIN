@@ -22,7 +22,7 @@ try:
 
     # 3. Получение 3-й картинки
     images = driver.find_elements(By.CSS_SELECTOR, "#image-container img")
-    third_image_src = "img/landscape.png"
+    third_image_src = "img/award.png"
 
     # 4. Вывод значения атрибута src в консоль
     print(third_image_src)
